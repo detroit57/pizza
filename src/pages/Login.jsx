@@ -12,6 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -43,20 +44,22 @@ const Login = () => {
             <Checkbox>Hide</Checkbox>
             <Text>Forgotten Password?</Text>
           </Flex>
-          <Button
-            rightIcon={<Spinner />}
-            fontSize={20}
-            fontWeight={400}
-            py={6}
-            borderRadius={10}
-            bg={"linear-gradient(45deg,tomato,darkorange)"}
-            color={"#fff"}
-            _hover={"none"}
-            my={2}
-            width={"100%"}
-          >
-            Login
-          </Button>
+          <Link to={"/home"}>
+            <Button
+              rightIcon={<Spinner />}
+              fontSize={20}
+              fontWeight={400}
+              py={6}
+              borderRadius={10}
+              bg={"linear-gradient(45deg,tomato,darkorange)"}
+              color={"#fff"}
+              _hover={"none"}
+              my={2}
+              width={"100%"}
+            >
+              Login
+            </Button>
+          </Link>
         </Box>
       </Flex>
     </Box>
