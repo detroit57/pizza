@@ -2,6 +2,7 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
+import { HambergerMenu } from "iconsax-react";
 
 const Header = () => {
   return (
@@ -16,7 +17,10 @@ const Header = () => {
     >
       <Flex alignItems={"center"} justifyContent={"space-between"} p={5}>
         <Logo />
-        <Flex gap={10}>
+        <Flex
+          gap={10}
+          display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
+        >
           <Text>Menu</Text>
           <Text>About</Text>
           <Text>Who we are</Text>
@@ -37,6 +41,9 @@ const Header = () => {
             Login
           </Button>
         </Link>
+        <Box display={{ lg: "none", md: "none", sm: "block", base: "block" }}>
+          <HambergerMenu />
+        </Box>
       </Flex>
     </Box>
   );

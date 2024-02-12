@@ -17,10 +17,10 @@ const Footer = () => {
           <Flex justifyContent={"center"}>
             <Image src="/logo.png" width={40} />
           </Flex>
-          <Text fontWeight={800} fontSize={50}>
+          <Text textAlign={"center"} fontWeight={800} fontSize={50}>
             Mimis Pizzza
           </Text>
-          <Text fontWeight={500}>
+          <Text textAlign={"center"} fontWeight={500}>
             &copy; All rights Reserved 2024 @Mimis Pizza
           </Text>
         </Box>

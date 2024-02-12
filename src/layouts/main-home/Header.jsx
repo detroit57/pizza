@@ -6,7 +6,7 @@ import Cart from "./Cart";
 const Header = () => {
   return (
     <Box
-      p={5}
+      p={{ lg: 5, md: 4, sm: 3, base: 3 }}
       pos={"fixed"}
       backdropFilter={"blur(24px)"}
       className="col"
