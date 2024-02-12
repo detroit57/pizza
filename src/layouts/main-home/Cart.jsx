@@ -5,7 +5,7 @@ import React from "react";
 const Cart = () => {
   return (
     <Box pos={"relative"}>
-      <Bag2 variant="Bold" color="#ddd" size={35} />
+      <Bag2 variant="Bold" color="#ddd" size={30} />
       <Text
         pos={"absolute"}
         top={0}

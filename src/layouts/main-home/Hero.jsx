@@ -23,6 +23,11 @@ const Hero = () => {
           textAlign={{ lg: "left", md: "left", sm: "center", base: "center" }}
           fontSize={{ lg: 80, md: 70, sm: 50, base: "40px" }}
           textShadow={"2px 2px 4px rgba(0, 0, 0, 0.5)"}
+          css={{
+            "@media screen (max-width: 300px)": {
+              bg: "green",
+            },
+          }}
         >
           Indulge in Flavorful Delights Your Culinary Adventure Begins Here!
         </Heading>

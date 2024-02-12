@@ -10,11 +10,10 @@ const Header = () => {
       pos={"fixed"}
       backdropFilter={"blur(24px)"}
       className="col"
-      borderRadius={100}
       zIndex={9999}
-      right={5}
-      top={5}
-      left={5}
+      right={0}
+      top={0}
+      left={0}
     >
       <Flex alignItems={"center"} justifyContent={"space-between"}>
         <Logo />
