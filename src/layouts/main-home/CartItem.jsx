@@ -6,8 +6,8 @@ const CartItem = () => {
     <Flex alignItems={"center"} justifyContent={"space-between"} my={5}>
       <Flex gap={10} alignItems={"center"}>
         <Image
-          width={{ lg: 120, md: 100, sm: "70px", base: 50 }}
-          height={{ lg: 120, md: 100, sm: "70px", base: 50 }}
+          width={{ xl : 250 ,lg: 120, md: 100, sm: "70px", base: 50 }}
+          height={{ xl : 250 ,lg: 120, md: 100, sm: "70px", base: 50 }}
           borderRadius={10}
           objectFit={"cover"}
           src="https://img.freepik.com/free-photo/delicious-food-white-plate_144627-34705.jpg?w=826&t=st=1707748691~exp=1707749291~hmac=70967801bf66002a45a77ce70649057111426ab1a6eeebc8d5c39aa194b00fb1"

@@ -4,13 +4,17 @@ import React from "react";
 const PercentageCard = () => {
   return (
     <Box py={10}>
-      <Flex alignItems={"center"} justifyContent={"center"}>
+      <Flex
+        alignItems={"center"}
+        justifyContent={"center"}
+        flexWrap={{ lg: "nowrap", md: "nowrap", sm: "wrap", base: "wrap" }}
+      >
         <Image
           src="https://img.freepik.com/free-photo/delicious-italian-food_1147-165.jpg?w=740&t=st=1707226705~exp=1707227305~hmac=92a01fb150906bcf5e1311aa084fe592d2bc47b2d3016dcaab214bce3ff2082c"
-          width={"400px"}
+          width={{lg : "400px", md : "300px", sm : "200px", base : "200px"}}
         />
         <Box borderLeft={"2px solid #ddd"} pl={10}>
-          <Text fontSize={40} fontWeight={600}>
+          <Text fontSize={{lg : 40, md : 40, sm : "30px",base : "30px"}} fontWeight={600}>
             Price After 20% <br />
             Discount
           </Text>

@@ -33,6 +33,7 @@ const Header = () => {
         <Link to={"/login"}>
           <Button
             bg={"#1a202c"}
+            display={{ lg: "block", md: "block", sm: "none", base: "none" }}
             color={"#fff"}
             borderRadius={40}
             width={150}
@@ -42,7 +43,7 @@ const Header = () => {
           </Button>
         </Link>
         <Box display={{ lg: "none", md: "none", sm: "block", base: "block" }}>
-          <HambergerMenu />
+          <HambergerMenu size={40} />
         </Box>
       </Flex>
     </Box>

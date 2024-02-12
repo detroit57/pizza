@@ -7,19 +7,30 @@ const Discounts = () => {
   return (
     <Flex py={10} justifyContent={"center"}>
       <Box>
-        <Heading textAlign={"center"} fontSize={60}>
+        <Heading
+          textAlign={"center"}
+          fontSize={{ lg: 60, md: 50, sm: "30px", base: "20px" }}
+        >
           Get 20% discounts <br /> on Your First Purchase
         </Heading>
         <PercentageCard />
         <Box>
-          <Heading textAlign={"center"} fontSize={60} py={5}>
+          <Heading
+            textAlign={"center"}
+            fontSize={{ lg: 60, md: 50, sm: 40, base: 40 }}
+            py={5}
+          >
             Follow Us On
           </Heading>
-          <Grid gridTemplateColumns={"1fr 1fr 1fr"} py={5}>
+          <Flex
+            justifyContent={"center"}
+            flexWrap={"wrap"}
+            gap={5}
+          >
             <Social />
             <Social />
             <Social />
-          </Grid>
+          </Flex>
         </Box>
       </Box>
     </Flex>
