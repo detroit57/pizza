@@ -16,22 +16,23 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <Box className="gray">
+    <Box className="gray" height={"100vh"} width={"100vw"}>
       <Flex>
         <Image
           src="/pizblack.jpg"
           width={"50vw"}
+          display={{ lg: "block", md: "block", sm: "none", base: "none" }}
           height={"100vh"}
           objectFit={"cover"}
         />
-        <Box p={100}>
-          <Heading fontSize={50}>Welcome Back 👋</Heading>
+        <Box padding={10} px={{lg : "120px",md : "120px", sm : "100px",base : "20px"}} pt={{base : "100px"}} width={"100vw"}>
+          <Heading fontSize={{lg : 50, md : "40px", sm : "30px", base : "30px"}}>Welcome Back 👋</Heading>
           <Text py={1}>Please fill the form with your appropiate detials</Text>
           <FormControl pt={5}>
             <FormLabel>Email Address *</FormLabel>
             <Input
               bg={"#fff"}
-              width={500}
+              width={{lg : "100%", md : "100%", sm : "100%", base : "100%"}}
               type="email"
               placeholder="you@gmail.com"
             />
