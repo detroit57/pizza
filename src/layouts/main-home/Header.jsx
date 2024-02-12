@@ -18,7 +18,7 @@ import Logo from "./Logo";
 import Search from "./Search";
 import Cart from "./Cart";
 import CartItem from "./CartItem";
-import { SearchNormal } from "iconsax-react";
+import { SearchNormal, Trash } from "iconsax-react";
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -41,23 +41,35 @@ const Header = () => {
           <Box ref={btnRef} colorScheme="teal" onClick={onOpen}>
             <Cart />
           </Box>
-          <Avatar />
+          <Avatar
+            name="Ryan Florence"
+            src="https://img.freepik.com/free-photo/confident-business-woman-portrait-smiling-face_53876-137693.jpg?w=740&t=st=1707312539~exp=1707313139~hmac=3c4f6c072136d471578e3b89de222cdfd047cca33109531701c8aff620280b1a"
+          />
         </Flex>
         <>
           <Drawer
-          
+            width={"100vw"}
             isOpen={isOpen}
-            placement="right"
+            placement="top"
             onClose={onClose}
             finalFocusRef={btnRef}
           >
             <DrawerOverlay />
-            <DrawerContent  width={"100vw"} zIndex={999999999}>
-              <Flex justifyContent={"space-between"} boxShadow={"0px 0px 10px #ddd"} py={3} px={3} alignItems={"center"}>
+            <DrawerContent width={"100vw"} zIndex={999999999}>
+              <Flex
+                justifyContent={"space-between"}
+                boxShadow={"0px 0px 10px #ddd"}
+                py={3}
+                px={3}
+                alignItems={"center"}
+              >
                 <Logo />
-                <CloseButton onClick={onClose} />
+                <Flex alignItems={'center'} gap={4}>
+                  <Trash variant="Bold" color="red" />
+                  <CloseButton onClick={onClose} />
+                </Flex>
               </Flex>
-              <Box pt={5} overflowY={"scroll"} px={5}>
+              <Box pt={5} overflowY={"scroll"} px={5} mb={20}>
                 <CartItem />
                 <CartItem />
                 <CartItem />

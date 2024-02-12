@@ -4,12 +4,14 @@ import Cartegory from "./Cartegory";
 const Categories = () => {
   return (
     <Box py={100} id="cart">
-      <Box p={5}>
-        <Text fontSize={"20px"}>Search Anything</Text>
-        <Flex>
-          <Input fontSize={12} placeholder="Search Anything" />
-        </Flex>
-      </Box>
+      <Flex justifyContent={'center'}>
+        <Box p={5}>
+          <Text fontSize={"20px"}>Search Anything</Text>
+          <Flex>
+            <Input width={"100%"} type="search" fontSize={12} placeholder="Search Anything" />
+          </Flex>
+        </Box>
+      </Flex>
       <Heading
         fontSize={{ lg: 80, md: 70, sm: 60, base: "50px" }}
         py={5}

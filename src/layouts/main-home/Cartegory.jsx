@@ -4,7 +4,7 @@ import React from "react";
 const Cartegory = () => {
   return (
     <Box
-      width={{ lg: 250, md: 250, sm: 250, base: 150 }}
+      width={{ lg: 250, md: 250, sm: 200, base: 150 }}
       boxShadow={"0px 0px 10px #ddd"}
       borderRadius={20}
     >

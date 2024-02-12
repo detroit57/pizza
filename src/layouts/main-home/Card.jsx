@@ -4,14 +4,14 @@ import React from "react";
 const Card = ({ image, name, des }) => {
   return (
     <Box
-      width={{ lg: 300, md: 250, sm: 250, base: 150 }}
+      width={{ lg: 300, md: 250, sm: 200, base: 150 }}
       boxShadow={"0px 0px 10px #ddd"}
       borderRadius={20}
     >
       <Image
         src={image}
         width={"100%"}
-        height={{ lg: 300, md: 250, sm: 200, base: 120 }}
+        height={{ lg: 250, md: 250, sm: 200, base: 100 }}
         objectFit={"cover"}
         borderTopRadius={20}
       />

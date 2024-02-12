@@ -5,13 +5,14 @@ import React from "react";
 const Cart = () => {
   return (
     <Box pos={"relative"}>
-      <Bag2 variant="Bold" color="#ddd" size={30} />
+      <Bag2 variant="Bold" color="darkorange" size={30} />
       <Text
         pos={"absolute"}
-        top={0}
-        bg={"tomato"}
+        top={-1}
+        bg={"darkorange"}
+        border={"2px solid #fff"}
         px={1.5}
-        right={0}
+        right={-2}
         borderRadius={40}
         color={"#fff"}
         fontSize={12}
@@ -19,7 +20,7 @@ const Cart = () => {
       >
         3
       </Text>
-      <Text color={"#fff"}>Cart</Text>
+      <Text color={"darkorange"}>Cart</Text>
     </Box>
   );
 };
