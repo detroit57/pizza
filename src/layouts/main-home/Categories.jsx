@@ -1,10 +1,15 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import React from "react";
 import Cartegory from "./Cartegory";
-
 const Categories = () => {
   return (
     <Box py={100} id="cart">
+      <Box p={5}>
+        <Text fontSize={"20px"}>Search Anything</Text>
+        <Flex>
+          <Input fontSize={12} placeholder="Search Anything" />
+        </Flex>
+      </Box>
       <Heading
         fontSize={{ lg: 80, md: 70, sm: 60, base: "50px" }}
         py={5}

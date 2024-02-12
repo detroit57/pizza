@@ -8,7 +8,7 @@ const Hero = () => {
         borderRadius={40}
         my={3}
         mx={3}
-        pt={150}
+        pt={{lg : 150, md : 120, sm : 100, base : "80px"}}
         px={{ lg: 20, md: "20px", sm: 10, base: "15px" }}
         bgImage={
           "url(https://img.freepik.com/premium-photo/baked-chicken-wings-asian-style-plate_2829-6394.jpg?w=826)"

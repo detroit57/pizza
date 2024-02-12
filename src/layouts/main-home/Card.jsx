@@ -4,20 +4,20 @@ import React from "react";
 const Card = ({ image, name, des }) => {
   return (
     <Box
-      width={{ lg: 300, md: 250, sm: 250, base: 170 }}
+      width={{ lg: 300, md: 250, sm: 250, base: 150 }}
       boxShadow={"0px 0px 10px #ddd"}
       borderRadius={20}
     >
       <Image
         src={image}
         width={"100%"}
-        height={{ lg: 300, md: 250, sm: 200, base: 200 }}
+        height={{ lg: 300, md: 250, sm: 200, base: 120 }}
         objectFit={"cover"}
         borderTopRadius={20}
       />
       <Box p={5}>
         <Text
-          fontSize={{ lg: 20, md: 20, sm: 15, base: 15 }}
+          fontSize={{ lg: 20, md: 20, sm: 15, base: 12 }}
           fontWeight={600}
           textAlign={"center"}
         >

@@ -15,9 +15,9 @@ const Footer = () => {
       <Box>
         <Box>
           <Flex justifyContent={"center"}>
-            <Image src="/logo.png" width={40} />
+            <Image src="/logo.png" width={{lg : 40, md : 40, sm : "30px", base : "150px"}} />
           </Flex>
-          <Text textAlign={"center"} fontWeight={800} fontSize={50}>
+          <Text textAlign={"center"} fontWeight={800} fontSize={{lg : 50, md : 50, sm : 40, base : "30px"}}>
             Mimis Pizzza
           </Text>
           <Text textAlign={"center"} fontWeight={500}>
