@@ -1,8 +1,9 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { color } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const   Footer = () => {
   return (
     <Flex
       className="blk"
@@ -24,7 +25,7 @@ const Footer = () => {
             &copy; All rights Reserved 2024 @Mimis Pizza
           </Text>
         </Box>
-        <Box></Box>
+        <Box textAlign={"center"} py={5}><Link to={"/login"}>Logout</Link></Box>
         <Box></Box>
       </Box>
     </Flex>

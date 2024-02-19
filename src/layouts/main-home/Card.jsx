@@ -37,7 +37,7 @@ const Card = ({ image, name, des }) => {
             _hover={"none"}
             color={"#fff"}
             py={{ lg: 6 }}
-            height={{ lg: 15, md: 15, sm: 10, base: 8 }}
+            height={{ lg: "40px", md: "40px", sm: 10, base: 8 }}
             fontSize={{ lg: 15, md: 12, sm: 12, base: 10 }}
             bg={"linear-gradient(45deg,tomato,darkorange)"}
           >

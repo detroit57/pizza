@@ -32,6 +32,7 @@ const CartItem = () => {
               </Text>
               <Text>₦ 2000</Text>
             </Flex>
+              <Text>(5)</Text>
           </Flex>
         </Box>
       </Flex>

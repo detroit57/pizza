@@ -1,12 +1,11 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { color } from "framer-motion";
 import React from "react";
-import Logo from "../components/Logo";
 
 const Footer = () => {
   return (
     <Flex
-      bg={"#000"}
+      className="blk"
       color={"#fff"}
       marginTop={100}
       p={20}
@@ -16,12 +15,12 @@ const Footer = () => {
       <Box>
         <Box>
           <Flex justifyContent={"center"}>
-            <Image src="/logo.png" width={40} />
+            <Image src="/logo.png" width={{lg : 40, md : 40, sm : "100px", base : "150px"}} />
           </Flex>
-          <Text fontWeight={800} fontSize={50}>
+          <Text textAlign={"center"} fontWeight={800} fontSize={{lg : 50, md : 50, sm : 40, base : "30px"}}>
             Mimis Pizzza
           </Text>
-          <Text fontWeight={500}>
+          <Text textAlign={"center"} fontWeight={500}>
             &copy; All rights Reserved 2024 @Mimis Pizza
           </Text>
         </Box>

@@ -8,13 +8,13 @@ const Hero = () => {
         borderRadius={40}
         my={3}
         mx={3}
-        pt={{lg : 100, md : "100px", sm : "80px", base : "80px"}}
+        pt={{lg : 120, md : "140px", sm : "120px", base : "120px"}}
         px={{ lg: 20, md: "20px", sm: 10, base: "15px" }}
         bgImage={
           "url(https://img.freepik.com/premium-photo/baked-chicken-wings-asian-style-plate_2829-6394.jpg?w=826)"
         }
         width={{ lg: "98vw", md: "100vw", sm: "100vw", base: "100%" }}
-        height={"100vh"}
+        height={{lg : "100vh", md : "100vh", sm : "80vh", base : "100vh"}}
         bgRepeat={"no-repeat"}
         color={"#fff"}
         bgSize={"cover"}
