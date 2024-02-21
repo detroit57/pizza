@@ -8,7 +8,7 @@ const Social = () => {
       textAlign={"center"}
       boxShadow={"0px 0px 10px #ddd"}
       width={"fit-content"}
-      p={10}
+      p={{lg : 10, md : 10, sm : 10, base : 5}}
       borderRadius={10}
     >
       <IconButton
@@ -17,7 +17,7 @@ const Social = () => {
         color={"none"}
         _hover={"none"}
       />
-      <Text mt={10} fontWeight={700} fontSize={"30px"}>
+      <Text mt={{lg : 10, md : 10, sm: 7, base : 8}} fontWeight={700} fontSize={"30px"}>
         456k+
       </Text>
       <Text fontWeight={700} fontSize={"20px"}>

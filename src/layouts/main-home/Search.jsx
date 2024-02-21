@@ -9,7 +9,7 @@ const Search = () => {
       gap={3}
       display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
     >
-      <Flex alignItems={"center"} borderRadius={10} bg={"#ddd"} px={2} py={1}>
+      <Flex alignItems={"center"} borderRadius={10} bg={"#fff"} boxShadow={"0px 0px 10px #ddd"} px={2} py={1}>
         {/* <SearchNormal1 size={30} color="#000" /> */}
         <Input
           color={"#000"}

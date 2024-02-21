@@ -14,7 +14,7 @@ body {
 }
 .card:hover {
   transition: all 1s !important;
-  box-shadow: 0px 0px 10px #6e6e6e;
+  box-shadow: 0px 0px 10px #cccccc;
 }
 .gray {
   background: rgb(237, 237, 237);
@@ -23,7 +23,8 @@ input:focus {
   box-shadow: 0px 0px 0px transparent !important;
 }
 .col {
-  background: #00000081;
+  background: #ffffff81;
+  /* background: #fff; */
 }
 .blk {
   background: #1b1b1b;
