@@ -11,7 +11,9 @@ const NewlyAdded = () => {
       >
         Newly Added
       </Heading>
-      <Text textAlign={"center"} fontSize={40} pb={5}>Categories : Pizza</Text>
+      <Text textAlign={"center"} fontSize={40} pb={5}>
+        Categories : Pizza
+      </Text>
       <Flex
         justifyContent={"center"}
         gap={{ lg: 10, md: 10, sm: 5, base: 5 }}

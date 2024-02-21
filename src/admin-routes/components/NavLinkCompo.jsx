@@ -1,25 +1,37 @@
 import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 
-const NavLinkCompo = ({ icon, name }) => {
+const NavLinkCompo = ({ icon, name, link }) => {
   return (
-    <Box>
+    <Box as={Link} to={link}>
       <Flex
         alignItems={"center"}
         gap={2}
-        bg={"darkorange"}
-        color={"#fff"}
-        width={"fit-content"}
+        width={"200px"}
         pr={2}
         pl={2}
         my={4}
         py={2}
-        borderRadius={10}
+        as={motion.div}
+        whileHover={{
+          x: 15,
+          transition: {
+            type: "tween",
+            stiffness: 2000,
+            duration: 0.4,
+          },
+
+          background: "darkorange",
+          color: "#fff",
+        }}
+        borderRadius={40}
       >
-        <IconButton bg={"none"} _hover={"none"} icon={icon} />
-        {/* <Text fontWeight={800} fontSize={20}>
+        <IconButton bg={"#fff"} borderRadius={40} _hover={"none"} icon={icon} />
+        <Text fontWeight={400} fontSize={20}>
           {name}
-        </Text> */}
+        </Text>
       </Flex>
     </Box>
   );

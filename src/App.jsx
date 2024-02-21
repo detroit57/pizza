@@ -9,6 +9,7 @@ import Profile from "./layouts/main-home/Profile";
 import Checkout from "./layouts/main-home/Checkout";
 import AdminLogin from "./admin-routes/AdminLogin";
 import Dashboard from "./admin-routes/Dashboard";
+import Products from "./admin-routes/Products";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/product/:id" element={<ProductPage />}></Route>
       <Route path="/admin-login" element={<AdminLogin />}></Route>
       <Route path="/dashboard" element={<Dashboard />}></Route>
+      <Route path="/products" element={<Products />}></Route>
     </Routes>
   );
 };

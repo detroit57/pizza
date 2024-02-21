@@ -5,10 +5,10 @@ import { HambergerMenu, Notification } from "iconsax-react";
 
 const Header = () => {
   return (
-    <Box>
+    <Box pos={"fixed"} left={0} right={0} bg={"#fff"} zIndex={9999}>
       <Flex justifyContent={"space-between"} p={2}>
         <Flex alignItems={"center"} gap={4}>
-          {/* <Logo /> */}
+          <Logo />
           <IconButton icon={<HambergerMenu />} />
         </Flex>
         <Flex alignItems={"center"} gap={4}>
