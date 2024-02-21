@@ -13,7 +13,7 @@ const Categories = () => {
       >
         Categories
       </Heading>
-      <Flex gap={5} justifyContent={"center"} flexWrap={"wrap"}>
+      <Flex gap={5} p={2} justifyContent={"center"} flexWrap={"wrap"}>
         <Cartegory />
         <Cartegory />
         <Cartegory />

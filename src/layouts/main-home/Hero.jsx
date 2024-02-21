@@ -8,13 +8,13 @@ const Hero = () => {
         borderRadius={40}
         my={3}
         mx={3}
-        pt={150}
+        pt={{ lg: 150, md: 100, sm: 100, base: 110 }}
         px={{ lg: 20, md: "20px", sm: 10, base: "15px" }}
         bgImage={
           "url(https://img.freepik.com/premium-photo/baked-chicken-wings-asian-style-plate_2829-6394.jpg?w=826)"
         }
         width={{ lg: "98vw", md: "100vw", sm: "100vw", base: "100%" }}
-        height={"96vh"}
+        height={{ lg: "96vh", md: "100vh", sm: "80vh", base: "90vh" }}
         bgRepeat={"no-repeat"}
         color={"#fff"}
         bgSize={"cover"}
@@ -56,7 +56,7 @@ const Hero = () => {
             <Button
               mt={{ lg: 10, md: 5, sm: 5, base: 5 }}
               py={7}
-              width={250}
+              width={{ lg: 250, md: 200, sm: 150, base: "100%" }}
               borderRadius={20}
               bg={"linear-gradient(45deg,tomato,darkorange)"}
               color={"#fff"}

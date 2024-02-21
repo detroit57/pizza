@@ -6,7 +6,7 @@ const NewlyAdded = () => {
   return (
     <Box>
       <Heading
-        fontSize={{ lg: 80, md: 70, sm: 60, base: "50px" }}
+        fontSize={{ lg: 80, md: 70, sm: 60, base: "35px" }}
         textAlign={"center"}
         py={5}
       >
