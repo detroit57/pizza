@@ -19,6 +19,7 @@ import {
 import { AddCircle, ArrowCircleDown } from "iconsax-react";
 import React from "react";
 import Product from "./Product";
+import AddProduct from "./AddProduct";
 
 const ProductRIghtSection = () => {
   return (
@@ -41,22 +42,7 @@ const ProductRIghtSection = () => {
           </Menu>
         </Flex>
       </Flex>
-      <Flex
-        alignItems={"center"}
-        gap={5}
-        boxShadow={"0px 0px 2000px #000"}
-        p={5}
-        position={"fixed"}
-        bg={"#fff"}
-        bottom={10}
-        right={10}
-        zIndex={99999999}
-        borderRadius={30}
-        width={"fit-content"}
-      >
-        <IconButton icon={<AddCircle size={50} variant="Bold" />} bg={"none"} />
-        <Text fontSize={20}>Add Product</Text>
-      </Flex>
+      <AddProduct />
       <Grid gridTemplateColumns={"1fr 1fr 1fr"} py={10} pr={10} gridGap={10}>
         <Product />
         <Product />

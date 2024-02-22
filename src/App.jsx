@@ -10,6 +10,7 @@ import Checkout from "./layouts/main-home/Checkout";
 import AdminLogin from "./admin-routes/AdminLogin";
 import Dashboard from "./admin-routes/Dashboard";
 import Products from "./admin-routes/Products";
+import Orders from "./admin-routes/Orders";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Route path="/admin-login" element={<AdminLogin />}></Route>
       <Route path="/dashboard" element={<Dashboard />}></Route>
       <Route path="/products" element={<Products />}></Route>
+      <Route path="/orders" element={<Orders />}></Route>
     </Routes>
   );
 };

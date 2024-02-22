@@ -18,9 +18,19 @@ import {
   EditablePreview,
   CloseButton,
   Input,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
 } from "@chakra-ui/react";
 import { Edit, Edit2, TickCircle, Trash } from "iconsax-react";
 import React, { useState } from "react";
+import AlertDelete from "./AlertDelete";
 
 const Product = () => {
   const [image, setImage] = useState(
@@ -53,15 +63,7 @@ const Product = () => {
         >
           Edit
         </Button>
-        <Button
-          width={"45%"}
-          bg={"none"}
-          color={"red"}
-          _hover={"none"}
-          leftIcon={<Trash variant="Bold" />}
-        >
-          Delete
-        </Button>
+        <AlertDelete />
       </Flex>
       <>
         <Modal isOpen={isOpen} onClose={onClose}>
