@@ -53,7 +53,7 @@ const AddProduct = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent height={"100vh"} pt={70}>
+        <DrawerContent height={"100vh"} pt={150}>
           <Box>
             <Flex justifyContent={"center"} alignItems={"center"} gap={20}>
               <Flex justifyContent={"center"} pos={"relative"}>

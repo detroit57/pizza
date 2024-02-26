@@ -61,6 +61,7 @@ const Login = () => {
               Login
             </Button>
           </Link>
+          <Text textAlign={'center'}><Link to={"/admin-login"}>Login as Admin</Link></Text>
         </Box>
       </Flex>
     </Box>

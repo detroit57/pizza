@@ -32,18 +32,22 @@ const LeftSideBar = () => {
         icon={<ShoppingBag variant="Bold" size={25} color="#000" />}
       />
       <NavLinkCompo
+        link={"/analysis"}
         name={"Analysis"}
         icon={<Chart variant="Bold" size={25} color="#000" />}
       />
       <NavLinkCompo
+      link={"/users"}
         name={"Users"}
         icon={<People variant="Bold" size={25} color="#000" />}
       />
       <NavLinkCompo
+      link={"/wallet"}
         name={"Wallet"}
         icon={<Wallet variant="Bold" size={25} color="#000" />}
       />
       <NavLinkCompo
+      link={"/settings"}
         name={"Settings"}
         icon={<Setting2 variant="Bold" size={25} color="#000" />}
       />

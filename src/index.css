@@ -8,6 +8,7 @@
   cursor: pointer;
   font-family: "Clash", sans-serif !important;
   /* transition: all 0.4s !important; */
+  display: none !important;
   scroll-behavior: smooth;
 }
 body {

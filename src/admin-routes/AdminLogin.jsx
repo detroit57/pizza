@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { PasswordCheck, Sms } from "iconsax-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AdminLogin = () => {
   return (
@@ -39,15 +40,17 @@ const AdminLogin = () => {
           />
         </FormControl>
         <Text textAlign={"right"}>Forgotten Password?</Text>
-        <Button
-          bg={"linear-gradient(45deg, darkorange,tomato)"}
-          color={"#fff"}
-          _hover={"none"}
-          width={"full"}
-          mt={3}
-        >
-          Login
-        </Button>
+        <Link to={"/dashboard"}>
+          <Button
+            bg={"linear-gradient(45deg, darkorange,tomato)"}
+            color={"#fff"}
+            _hover={"none"}
+            width={"full"}
+            mt={3}
+          >
+            Login
+          </Button>
+        </Link>
       </Box>
     </Flex>
   );

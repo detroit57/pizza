@@ -11,6 +11,10 @@ import AdminLogin from "./admin-routes/AdminLogin";
 import Dashboard from "./admin-routes/Dashboard";
 import Products from "./admin-routes/Products";
 import Orders from "./admin-routes/Orders";
+import Analysis from "./admin-routes/Analysis";
+import Users from "./admin-routes/Users";
+import Wallet from "./admin-routes/Wallet";
+import Settings from "./admin-routes/Settings";
 
 const App = () => {
   return (
@@ -26,6 +30,10 @@ const App = () => {
       <Route path="/dashboard" element={<Dashboard />}></Route>
       <Route path="/products" element={<Products />}></Route>
       <Route path="/orders" element={<Orders />}></Route>
+      <Route path="/analysis" element={<Analysis />}></Route>
+      <Route path="/users" element={<Users />}></Route>
+      <Route path="/wallet" element={<Wallet />}></Route>
+      <Route path="/settings" element={<Settings />}></Route>
     </Routes>
   );
 };

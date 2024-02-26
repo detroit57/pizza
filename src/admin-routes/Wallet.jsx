@@ -1,0 +1,337 @@
+import {
+  Box,
+  Heading,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr,
+} from "@chakra-ui/react";
+import React from "react";
+import Header from "./components/Header";
+import LeftSideBar from "./components/LeftSideBar";
+
+const Wallet = () => {
+  return (
+    <Box>
+      <Header />
+      <LeftSideBar />
+      <Box pl={250} pt={90}>
+        <Box>
+          <Heading>Avaliable Balance</Heading>
+          <Heading fontSize={60}>₦ 500,000,000k</Heading>
+          <Heading>Transaction History</Heading>
+          <Box pt={5}>
+            <TableContainer>
+              <Table>
+                <Thead>
+                  <Tr>
+                    <Th>ID</Th>
+                    <Th>USERNAME</Th>
+                    <Th>EMAIL</Th>
+                    <Th>PRODUCT</Th>
+                    <Th>QUANTITY</Th>
+                    <Th>PRICE</Th>
+                    <Th>STATUS</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>1</Td>
+                    <Td>areegbedavid</Td>
+                    <Td>areegbedavid@gmail.com</Td>
+                    <Td>Jollof Rice & Chicken</Td>
+                    <Td>2</Td>
+                    <Td>2500</Td>
+                    <Td>
+                      <Text
+                        p={3}
+                        bg={"green"}
+                        textAlign={"center"}
+                        borderRadius={40}
+                        color={"#fff"}
+                      >
+                        Success
+                      </Text>
+                    </Td>
+                  </Tr>
+                </Tbody>
+              </Table>
+            </TableContainer>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+export default Wallet;
