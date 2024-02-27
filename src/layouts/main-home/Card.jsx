@@ -1,10 +1,10 @@
-import { Box, Button, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ image, name, des }) => {
   return (
-    <Link to={"/product/2"}>
+    <Link to={"/product/2#"}>
       <Box
         width={{ lg: 300, md: 250, sm: 200, base: 150 }}
         boxShadow={"0px 0px 10px #ddd"}
@@ -25,12 +25,16 @@ const Card = ({ image, name, des }) => {
           >
             {name}
           </Text>
-          <Text
+          {/* <Text
             fontSize={{ lg: 12, md: 12, sm: 10, base: 8 }}
             textAlign={{ lg: "left", md: "left", sm: "center", base: "center" }}
           >
             {des}
-          </Text>
+          </Text> */}
+          <Flex justifyContent={'space-between'} px={5} fontSize={{lg : 15, md : 15, sm : 12, base : 10}} pt={2}>
+            <Text fontWeight={500}>Price</Text>
+            <Text>₦ 4800</Text>
+          </Flex>
           <Button
             width={"100%"}
             mt={{ lg: 5, md: 5, sm: 3, base: 2 }}

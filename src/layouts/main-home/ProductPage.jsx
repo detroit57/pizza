@@ -7,7 +7,7 @@ const ProductPage = () => {
   return (
     <Box>
       <Header />
-      <Box marginTop={{ lg: "120px", md: "100px", sm: "50px", base: "50px" }}>
+      <Box marginTop={{ lg: "120px", md: "100px", sm: "50px", base: "80px" }}>
         <Flex
           p={{lg : 10, md : 10, sm : 5, base : 5}}
           gap={"40px"}

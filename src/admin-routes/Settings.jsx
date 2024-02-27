@@ -50,9 +50,9 @@ const Settings = () => {
               />
             </Box>
             <Box>
-              <Heading fontSize={60}>Areegbe David</Heading>
+              <Heading fontSize={60}>Mrs Titi Adeboye</Heading>
               <Heading py={5} fontSize={40}>
-                areegbedavid@gmail.com
+                titiadeboye@gmail.com
               </Heading>
               <Input
                 width={"100%"}
