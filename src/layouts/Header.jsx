@@ -33,18 +33,15 @@ const Header = () => {
           gap={10}
           display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
         >
-          <Text>Menu</Text>
+          <Text>Home</Text>
           <Text>About</Text>
-          <Text>Who we are</Text>
           <Text>Events</Text>
           <Text>Contacts</Text>
-          <Text>Who we are</Text>
-          <Text>Drinks🥤</Text>
-          <Text>Categories 🍕</Text>
+          <Text>Categories</Text>
         </Flex>
         <Link to={"/login"}>
           <Button
-            bg={"#1a202c"}
+            bg={"#620997"}
             display={{ lg: "block", md: "block", sm: "none", base: "none" }}
             color={"#fff"}
             borderRadius={40}
@@ -83,14 +80,11 @@ const Header = () => {
               <CloseButton onClick={onClose} />
             </Flex>
             <Box pt={5} px={5} mb={20} lineHeight={10}>
-              <Text>Menu</Text>
+              <Text>Home</Text>
               <Text>About</Text>
-              <Text>Who we are</Text>
               <Text>Events</Text>
               <Text>Contacts</Text>
-              <Text>Who we are</Text>
-              <Text>Drinks🥤</Text>
-              <Text>Categories 🍕</Text>
+              <Text>Categories</Text>
               <Link to={"/login"}>
                 <Text>Login</Text>
               </Link>

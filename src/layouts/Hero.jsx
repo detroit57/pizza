@@ -1,40 +1,52 @@
-import { Box, Button, Flex, Heading } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { ArrowCircleRight } from "iconsax-react";
 import React from "react";
 
 const Hero = () => {
   return (
-    <Flex
-      justifyContent={"center"}
-      h={{lg  :"100vh", md : "100vh", sm : "70vh", base : "60vh"}}
-      p={{lg : 20, md : 20, sm : 10,base: 10}}
-      pt={{base : "180px", sm : "170px", md: "180px", lg : "200px"}}
-      px={{base : 0}}
-      bg={"linear-gradient(45deg,skyblue,white)"}
-    >
-      <Box>
-        <Heading
-          fontFamily={"Clash"}
-          color={"#1a202c"}
-          fontSize={{lg: 100, md : 70, sm : 50, base : "30px"}}
-          textAlign={"center"}
-        >
-          Made by Mimis🥤
-          <br />
-          🍕Loved by all
-        </Heading>
-        <Flex justifyContent={"center"} marginTop={"30px"}>
-          <Button
-            p={"30px"}
-            borderRadius={20}
-            bg={"#1a202c"}
-            _hover={"none"}
-            color={"#fff"}
-          >
-            Explore Categories
-          </Button>
-        </Flex>
-      </Box>
-    </Flex>
+    <Box mt={100}>
+      <Flex justifyContent={"center"} p={10}>
+        <Box>
+          <Flex justifyContent={"center"}>
+            <Button
+              borderRadius={20}
+              bg={"#620997"}
+              color={"#fff"}
+              px={10}
+              py={6}
+              _hover={{ bg: "#620997" }}
+            >
+              🍕 Yummy to the crunch
+            </Button>
+          </Flex>
+          <Heading pt={5} color={"#000"} textAlign={"center"} fontSize={{sm : 55, base : 40, md : 90, lg : 100}}>
+            Made by Mimis <br /> Loved by All
+          </Heading>
+          <Flex justifyContent={"center"} pt={3}>
+            <Text width={{lg : 500, md : 500, sm : "100%", base : "100%"}} textAlign={"center"}>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+              numquam ipsam quos provident totam neque maxime, impedit nam quis
+              dolor earum molestias labore modi praesentium eaque! Dolorem,
+              dolorum quod. Iure.
+            </Text>
+          </Flex>
+          <Flex justifyContent={"center"}>
+            <Button
+              rightIcon={<ArrowCircleRight variant="Bold" />}
+              bg={"#620997"}
+              _hover={{bg : "#620997"}}
+              px={14}
+              color={"#fff"}
+              borderRadius={10}
+              mt={5}
+              py={7}
+            >
+              Get Started
+            </Button>
+          </Flex>
+        </Box>
+      </Flex>
+    </Box>
   );
 };
 

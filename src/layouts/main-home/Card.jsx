@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,7 @@ const Card = ({ image, name, des }) => {
       <Box
         width={{ lg: 300, md: 250, sm: 200, base: 150 }}
         boxShadow={"0px 0px 10px #ddd"}
+        height={{lg : 350, md : 350, sm : 300, base : 300}}
         borderRadius={20}
       >
         <Image
@@ -17,36 +18,17 @@ const Card = ({ image, name, des }) => {
           objectFit={"cover"}
           borderTopRadius={20}
         />
-        <Box p={5}>
+        <Box p={3}>
           <Text
             fontSize={{ lg: 20, md: 20, sm: 15, base: 12 }}
             fontWeight={600}
-            textAlign={"center"}
           >
             {name}
           </Text>
-          {/* <Text
-            fontSize={{ lg: 12, md: 12, sm: 10, base: 8 }}
-            textAlign={{ lg: "left", md: "left", sm: "center", base: "center" }}
-          >
-            {des}
-          </Text> */}
-          <Flex justifyContent={'space-between'} px={5} fontSize={{lg : 15, md : 15, sm : 12, base : 10}} pt={2}>
+          <Flex justifyContent={'space-between'} pb={4} fontSize={{lg : 15, md : 15, sm : 12, base : 10}} pt={2}>
             <Text fontWeight={500}>Price</Text>
             <Text>₦ 4800</Text>
           </Flex>
-          <Button
-            width={"100%"}
-            mt={{ lg: 5, md: 5, sm: 3, base: 2 }}
-            _hover={"none"}
-            color={"#fff"}
-            py={{ lg: 6 }}
-            height={{ lg: "40px", md: "40px", sm: 10, base: 8 }}
-            fontSize={{ lg: 15, md: 12, sm: 12, base: 10 }}
-            bg={"linear-gradient(45deg,tomato,darkorange)"}
-          >
-            Add to Cart
-          </Button>
         </Box>
       </Box>
     </Link>

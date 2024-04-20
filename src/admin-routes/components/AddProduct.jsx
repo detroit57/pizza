@@ -25,7 +25,7 @@ const AddProduct = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const [image, setImage] = useState(
-    "https://img.freepik.com/free-photo/top-view-chicken-wings-plate-with-sesame-seeds-cherry-tomatoes_23-2148679083.jpg?w=740&t=st=1707405875~exp=1707406475~hmac=903c74428df19ff7de2ebdeaeb54a2dd76a2a5392465cb5cb3dc0de6a70d104a"
+    "https://img.freepik.com/free-photo/top-view-chicken-wings-plate-with-sesame-seeds-cherry-#620997es_23-2148679083.jpg?w=740&t=st=1707405875~exp=1707406475~hmac=903c74428df19ff7de2ebdeaeb54a2dd76a2a5392465cb5cb3dc0de6a70d104a"
   );
   return (
     <>

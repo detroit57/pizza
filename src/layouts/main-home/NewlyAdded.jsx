@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const NewlyAdded = () => {
   return (
-    <Box p={1}>
+    <Box>
       <Heading
         fontSize={{ lg: 80, md: 70, sm: 50, base: "40px" }}
         textAlign={"center"}

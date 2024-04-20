@@ -26,7 +26,7 @@ const AdminLogin = () => {
             pos={"absolute"}
             right={"0"}
             bg={"none"}
-            icon={<Sms variant="Bold" color="darkorange" />}
+            icon={<Sms variant="Bold" color="#620997" />}
           />
         </FormControl>
         <FormControl pt={5} pos={"relative"}>
@@ -36,13 +36,13 @@ const AdminLogin = () => {
             pos={"absolute"}
             right={"0"}
             bg={"none"}
-            icon={<PasswordCheck variant="Bold" color="darkorange" />}
+            icon={<PasswordCheck variant="Bold" color="#620997" />}
           />
         </FormControl>
         <Text textAlign={"right"}>Forgotten Password?</Text>
         <Link to={"/dashboard"}>
           <Button
-            bg={"linear-gradient(45deg, darkorange,tomato)"}
+            bg={"linear-gradient(45deg, #620997,#620997)"}
             color={"#fff"}
             _hover={"none"}
             width={"full"}

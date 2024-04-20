@@ -52,7 +52,7 @@ const SignUp = () => {
             fontWeight={400}
             py={6}
             borderRadius={10}
-            bg={"linear-gradient(45deg,tomato,darkorange)"}
+            bg={"#620997"}
             color={"#fff"}
             _hover={"none"}
             my={2}

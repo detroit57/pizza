@@ -17,17 +17,11 @@ const Header = () => {
           <IconButton icon={<HambergerMenu />} />
         </Flex>
         <Flex alignItems={"center"} gap={4}>
-          <IconButton
-            borderRadius={400}
-            icon={<Notification size={50} variant="Bold" />}
-            bg={"none"}
-            _hover={"none"}
-          />
           <Avatar
             name="Admin Users"
             src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-139608.jpg?w=740&t=st=1707313441~exp=1707314041~hmac=f4fdede70854ae687e6b6ac43bf6c3c91664f4bc8d35d4ff2ac5cc20adfbe1cd"
           />
-          <IconButton icon={<Logout variant="Bold" size={40} />} colorScheme="red" as={Link} to={"/admin-login"} />
+          <IconButton borderRadius={40} icon={<Logout variant="Bold" size={40} />} colorScheme="red" as={Link} to={"/admin-login"} />
         </Flex>
       </Flex>
     </Box>

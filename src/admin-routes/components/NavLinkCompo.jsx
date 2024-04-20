@@ -23,7 +23,7 @@ const NavLinkCompo = ({ icon, name, link }) => {
             duration: 0.4,
           },
 
-          background: "darkorange",
+          background: "#620997",
           color: "#fff",
         }}
         borderRadius={40}

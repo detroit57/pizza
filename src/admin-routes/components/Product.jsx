@@ -34,14 +34,14 @@ import AlertDelete from "./AlertDelete";
 
 const Product = () => {
   const [image, setImage] = useState(
-    "https://img.freepik.com/free-photo/top-view-chicken-wings-plate-with-sesame-seeds-cherry-tomatoes_23-2148679083.jpg?w=740&t=st=1707405875~exp=1707406475~hmac=903c74428df19ff7de2ebdeaeb54a2dd76a2a5392465cb5cb3dc0de6a70d104a"
+    "https://img.freepik.com/free-photo/top-view-chicken-wings-plate-with-sesame-seeds-cherry-#620997es_23-2148679083.jpg?w=740&t=st=1707405875~exp=1707406475~hmac=903c74428df19ff7de2ebdeaeb54a2dd76a2a5392465cb5cb3dc0de6a70d104a"
   );
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box boxShadow={"0px 0px 10px #eee"} pb={5} borderRadius={30}>
       <Image
         src={
-          "https://img.freepik.com/free-photo/top-view-chicken-wings-plate-with-sesame-seeds-cherry-tomatoes_23-2148679083.jpg?w=740&t=st=1707405875~exp=1707406475~hmac=903c74428df19ff7de2ebdeaeb54a2dd76a2a5392465cb5cb3dc0de6a70d104a"
+          "https://img.freepik.com/free-photo/top-view-chicken-wings-plate-with-sesame-seeds-cherry-#620997es_23-2148679083.jpg?w=740&t=st=1707405875~exp=1707406475~hmac=903c74428df19ff7de2ebdeaeb54a2dd76a2a5392465cb5cb3dc0de6a70d104a"
         }
         width={"100%"}
         height={300}

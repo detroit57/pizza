@@ -4,7 +4,7 @@ import React from "react";
 const Logo = () => {
   return (
     <Box>
-      <Image src="/logo.png" width={"50px"} />
+      <Image src="/logo.jpg" width={"50px"} borderRadius={40} />
     </Box>
   );
 };

@@ -11,22 +11,23 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [dis,setDis]= useState("none");
   return (
     <Box className="gray" height={"100vh"} width={"100vw"}>
       <Flex>
         <Image
-          src="/pizblack.jpg"
-          width={"50vw"}
+          src="/img (10).jpg"
+          width={"80vw"}
           display={{ lg: "block", md: "block", sm: "none", base: "none" }}
           height={"100vh"}
           objectFit={"cover"}
         />
-        <Box padding={0} px={{lg : "120px",md : "120px", sm : "100px",base : "40px"}} pt={{lg : 20, md : 20, sm : "100px",base : "100px"}} width={"100vw"}>
-          <Heading fontSize={{lg : 50, md : "40px", sm : "30px", base : "30px"}}>Welcome Back 👋</Heading>
+        <Box padding={0} px={{lg : "200px",md : "120px", sm : "60px",base : "40px"}} pt={{lg : 20, md : 20, sm : "100px",base : "100px"}} width={"100%"}>
+          <Heading   fontSize={{lg : 40, md : "40px", sm : "30px", base : "30px"}}>Welcome Back 👋</Heading>
           <Text py={1}>Please fill the form with your appropiate detials</Text>
           <FormControl pt={5}>
             <FormLabel>Email Address *</FormLabel>
@@ -41,18 +42,18 @@ const Login = () => {
             <FormLabel>Password *</FormLabel>
             <Input bg={"#fff"} type="password" placeholder="**************" />
           </FormControl>
-          <Flex py={2} justifyContent={"space-between"} fontWeight={500}>
-            <Checkbox>Hide</Checkbox>
-            <Text>Forgotten Password?</Text>
-          </Flex>
+            <Text py={2} textAlign={"right"}>Forgotten Password?</Text>
           <Link to={"/home"}>
             <Button
-              rightIcon={<Spinner />}
+              rightIcon={<Spinner display={dis} />}
               fontSize={20}
               fontWeight={400}
               py={6}
               borderRadius={10}
-              bg={"linear-gradient(45deg,tomato,darkorange)"}
+              onClick={()=>{
+                setDis("block");
+              }}
+              bg={"#620997"}
               color={"#fff"}
               _hover={"none"}
               my={2}

@@ -22,7 +22,7 @@ const Search = () => {
         py={6}
         width={120}
         _hover={"none"}
-        bg={"linear-gradient(45deg,tomato,darkorange)"}
+        bg={"#620997"}
         color={"#fff"}
       >
         Search

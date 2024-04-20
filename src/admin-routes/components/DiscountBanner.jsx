@@ -11,7 +11,7 @@ const DiscountBanner = () => {
         color={"#fff"}
         borderRadius={20}
         gap={50}
-        bg={"darkorange"}
+        bg={"#620997"}
         p={5}
       >
         <Box width={500}>

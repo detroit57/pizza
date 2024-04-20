@@ -11,6 +11,9 @@
   /* display: none !important; */
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 body {
 }
 .card:hover {
@@ -18,7 +21,7 @@ body {
   box-shadow: 0px 0px 10px #cccccc;
 }
 .gray {
-  background: rgb(237, 237, 237);
+  /* background: rgb(237, 237, 237); */
 }
 input:focus {
   box-shadow: 0px 0px 0px transparent !important;
@@ -29,4 +32,7 @@ input:focus {
 }
 .blk {
   background: #1b1b1b;
+}
+.bg{
+  background: #00000083;
 }

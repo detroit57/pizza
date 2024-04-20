@@ -64,7 +64,7 @@ const Profile = () => {
                   }
                 }}
                 my={2}
-                bg={"darkorange"}
+                bg={"#620997"}
                 color={"#fff"}
                 _hover={"none"}
               >
@@ -77,7 +77,7 @@ const Profile = () => {
               <Link to={"/home"}>Back</Link>
             </Button>
             <Button
-              bg={"darkorange"}
+              bg={"#620997"}
               color={"#fff"}
               _hover={"none"}
               width={"45%"}

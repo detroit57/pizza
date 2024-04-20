@@ -15,13 +15,14 @@ import {
   Text,
 } from "@chakra-ui/react";
 import CartItem from "./CartItem";
-import React from "react";
+import React, { useState } from "react";
 import CheckoutItem from "./CheckoutItem";
 import { Wallet, Wallet2, Wallet3 } from "iconsax-react";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const Checkout = () => {
+  const [value,setValue] = useState("");
   return (
     <Box pt={5}>
       <Header />
@@ -94,12 +95,15 @@ const Checkout = () => {
                 gap={5}
                 fontSize={12}
                 flexWrap={"wrap"}
+                onChange={(e)=>{
+                  setValue(e);
+                }}
                 justifyContent={"space-between"}
                 py={5}
               >
-                <Radio>Online Payment</Radio>
-                <Radio>Cash on Delivery</Radio>
-                <Radio>POS on Delivery</Radio>
+                <Radio value="Online Payment">Online Payment</Radio>
+                <Radio value="Cash on Delivery">Cash on Delivery</Radio>
+                <Radio value="POS on Delivery">POS on Delivery</Radio>
               </Flex>
             </Box>
           </Box>
@@ -147,7 +151,7 @@ const Checkout = () => {
             width={"100%"}
             _hover={"none"}
             height={50}
-            bg={"darkorange"}
+            bg={"#620997"}
             color={"#fff"}
             rightIcon={<Wallet3 variant="Bold" />}
             alignItems={"center"}

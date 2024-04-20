@@ -8,9 +8,8 @@ import NewlyAdded from "../layouts/main-home/NewlyAdded";
 import Footer from "../layouts/main-home/Footer";
 
 const MainHome = () => {
-  const scroll = new LocomotiveScroll();
   return (
-    <Box data-scroll-container>
+    <Box>
       <Header />
       <Hero />
       <Categories />
