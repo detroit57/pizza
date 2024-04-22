@@ -8,7 +8,7 @@ const Card = ({ image, name, des }) => {
       <Box
         width={{ lg: 300, md: 250, sm: 200, base: 150 }}
         boxShadow={"0px 0px 10px #ddd"}
-        height={{lg : 350, md : 350, sm : 300, base : 300}}
+        height={{lg : 350, md : 350, sm : 300, base : 200}}
         borderRadius={20}
       >
         <Image
@@ -20,7 +20,7 @@ const Card = ({ image, name, des }) => {
         />
         <Box p={3}>
           <Text
-            fontSize={{ lg: 20, md: 20, sm: 15, base: 12 }}
+            fontSize={{ lg: 20, md: 20, sm: 15, base: 15 }}
             fontWeight={600}
           >
             {name}

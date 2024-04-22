@@ -13,7 +13,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box bg={"#111"} mt={100} color={"#fff"} p={20}>
+    <Box bg={"#111"} mt={100} id="contacts" color={"#fff"} p={20}>
       <Flex
         alignItems={"center"}
         justifyContent={"space-between"}

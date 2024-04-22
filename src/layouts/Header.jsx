@@ -6,12 +6,13 @@ import {
   DrawerContent,
   DrawerOverlay,
   Flex,
+  Link,
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
 import Logo from "../components/Logo";
-import { Link } from "react-router-dom";
+import { Link as Ln } from "react-router-dom";
 import { HambergerMenu } from "iconsax-react";
 
 const Header = () => {
@@ -33,11 +34,21 @@ const Header = () => {
           gap={10}
           display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
         >
-          <Text>Home</Text>
-          <Text>About</Text>
-          <Text>Events</Text>
-          <Text>Contacts</Text>
-          <Text>Categories</Text>
+          <Text as={Link} href="#">
+            Home
+          </Text>
+          <Text as={Link} href="#about">
+            About
+          </Text>
+          <Text as={Link} href="#events">
+            Events
+          </Text>
+          <Text as={Link} href="#contacts">
+            Contacts
+          </Text>
+          <Text as={Link} href="#categories">
+            Categories
+          </Text>
         </Flex>
         <Link to={"/login"}>
           <Button
@@ -80,14 +91,24 @@ const Header = () => {
               <CloseButton onClick={onClose} />
             </Flex>
             <Box pt={5} px={5} mb={20} lineHeight={10}>
-              <Text>Home</Text>
-              <Text>About</Text>
-              <Text>Events</Text>
-              <Text>Contacts</Text>
-              <Text>Categories</Text>
-              <Link to={"/login"}>
+              <Text as={Link} href="#">
+                Home
+              </Text>
+              <Text as={Link} href="#about">
+                About
+              </Text>
+              <Text as={Link} href="#events">
+                Events
+              </Text>
+              <Text as={Link} href="#contacts">
+                Contacts
+              </Text>
+              <Text as={Link} href="#categories">
+                Categories
+              </Text>
+              <Ln to={"/login"}>
                 <Text>Login</Text>
-              </Link>
+              </Ln>
             </Box>
           </DrawerContent>
         </Drawer>

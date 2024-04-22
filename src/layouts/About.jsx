@@ -4,8 +4,9 @@ import React from "react";
 const About = () => {
   return (
     <Flex
+    id="about"
       flexWrap={{ lg: "nowrap", md: "nowrap", sm: "wrap", base: "wrap" }}
-      mt={100}
+      pt={150}
       px={{lg : 20, md : 20, sm : 0, base: 0}}
       bgImage={{
         lg: "none",

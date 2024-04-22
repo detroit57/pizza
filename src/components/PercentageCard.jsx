@@ -10,7 +10,8 @@ const PercentageCard = () => {
         flexWrap={{ lg: "nowrap", md: "nowrap", sm: "wrap", base: "wrap" }}
       >
         <Image
-          src="https://img.freepik.com/free-photo/delicious-italian-food_1147-165.jpg?w=740&t=st=1707226705~exp=1707227305~hmac=92a01fb150906bcf5e1311aa084fe592d2bc47b2d3016dcaab214bce3ff2082c"
+          src="/img (1).jpeg"
+          borderRadius={20}
           width={{lg : "400px", md : "300px", sm : "200px", base : "200px"}}
         />
         <Box borderLeft={"2px solid #ddd"} pl={10}>

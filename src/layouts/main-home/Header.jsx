@@ -44,10 +44,7 @@ const Header = () => {
             <Cart />
           </Box>
           <Link to={"/profile"}>
-            <Avatar
-              name="Ryan Florence"
-              src=""
-            />
+            <Avatar name="Ryan Florence" src="" />
           </Link>
         </Flex>
         <>
@@ -59,7 +56,7 @@ const Header = () => {
             finalFocusRef={btnRef}
           >
             <DrawerOverlay />
-            <DrawerContent width={"100vw"} zIndex={999999999}>
+            <DrawerContent height={"100vh"} width={"100vw"} zIndex={999999999}>
               <Flex
                 justifyContent={"space-between"}
                 boxShadow={"0px 0px 10px #ddd"}
@@ -76,35 +73,44 @@ const Header = () => {
                   <CloseButton onClick={onClose} />
                 </Flex>
               </Flex>
-              <Box pt={5} overflowY={"scroll"} px={5} mb={20}>
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <Link to={"/checkout"}>
-                  <Button
-                    width={"100%"}
-                    _hover={"none"}
-                    height={50}
-                    bg={"#620997"}
-                    color={"#fff"}
-                  >
-                    Checkout
-                  </Button>
-                </Link>
-              </Box>
+              <Flex gap={20} width={"100vw"} p={10}>
+                <Box width={"50vw"}>
+                  <Text fontSize={40} fontWeight={800}>
+                    Proceed to Checkout
+                  </Text>
+                  <Text>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae, iste quam non perferendis debitis vero aliquam,
+                    consequatur, quae recusandae magni in velit ab aspernatur
+                    nesciunt! Nobis qui non explicabo ea.
+                  </Text>
+                  <Link to={"/checkout"}>
+                    <Button
+                      mt={4}
+                      width={"20vw"}
+                      _hover={"none"}
+                      height={50}
+                      bg={"#620997"}
+                      color={"#fff"}
+                    >
+                      Checkout
+                    </Button>
+                  </Link>
+                </Box>
+                <Box pt={5} width={"1000px"} height={"100%"} mb={20} px={5}>
+                  <Box overflowY={"scroll"}>
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                    <CartItem />
+                  </Box>
+                </Box>
+              </Flex>
             </DrawerContent>
           </Drawer>
         </>

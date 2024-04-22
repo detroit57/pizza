@@ -12,7 +12,7 @@ const Hero = () => {
           "url(https://media.istockphoto.com/id/1008416586/photo/buffet-at-nigerian-birthday-party.jpg?s=2048x2048&w=is&k=20&c=H3PP-RiJmkq1-dqXvAd22pTBmY9N5cqTMFVrOqnQ1_Q=)"
         }
         width={{ lg: "98vw", md: "100vw", sm: "100vw", base: "100%" }}
-        height={{ lg: "90vh", md: "70vh", sm: "80vh", base: "100vh" }}
+        height={{ lg: "90vh", md: "70vh", sm: "80vh", base: "80vh" }}
         bgRepeat={"no-repeat"}
         color={"#fff"}
         bgSize={"cover"}
@@ -21,7 +21,7 @@ const Hero = () => {
           className="bg"
           width={{ lg: "98vw", md: "100vw", sm: "100%", base: "100%" }}
           borderRadius={40}
-          height={{ lg: "90vh", md: "70vh", sm: "80vh", base: "100vh" }}
+          height={{ lg: "90vh", md: "70vh", sm: "80vh", base: "80vh" }}
           pt={{ lg: 150, md: "120px", sm: "120px", base: "120px" }}
           px={{ lg: 20, md: "40px", sm: 10, base: "15px" }}
         >

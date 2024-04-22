@@ -4,7 +4,7 @@ import Event from "../components/Event";
 
 const Events = () => {
   return (
-    <Box px={{lg :  20, md : 20, sm : 10, base : 10}} my={100}>
+    <Box id="events"  px={{lg :  20, md : 20, sm : 10, base : 10}} py={100}>
       <Heading fontSize={80}>Events</Heading>
       <Flex width={"100%"} gap={10} overflowX={"scroll"} height={"fit-content"} mt={5} borderRadius={40}>
         <Event image={"/img (5).jpg"} event={"Independence Day"} />

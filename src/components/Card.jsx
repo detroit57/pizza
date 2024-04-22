@@ -2,15 +2,15 @@ import { Box, Button, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
 
-const Card = () => {
+const Card = ({image,text,des}) => {
   return (
     <Box p={5} className="card" borderRadius={20}>
       <Image
-        src="https://img.freepik.com/free-photo/delicious-italian-food_1147-165.jpg?w=740&t=st=1707226705~exp=1707227305~hmac=92a01fb150906bcf5e1311aa084fe592d2bc47b2d3016dcaab214bce3ff2082c"
+        src={image}
         w={"100%"}
+        borderRadius={20}
         objectFit={"cover"}
         as={motion.img}
-        n
         whileHover={{ scale: 0.9 }}
       />
       <Box>
@@ -19,14 +19,13 @@ const Card = () => {
           textAlign={{ lg: "left", md: "left", sm: "center", base: "center" }}
           fontWeight={"800"}
         >
-          Pepperoni Flavor
+          {text}
         </Text>
         <Text
           fontSize={{ lg: 12, md: 12, sm: 10, base: 8 }}
           textAlign={{ lg: "left", md: "left", sm: "center", base: "center" }}
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-          necessitatibus laborum temporibus exercitationem
+          {des}
         </Text>
         <Button
           my={5}

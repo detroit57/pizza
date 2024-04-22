@@ -15,6 +15,7 @@ import Analysis from "./admin-routes/Analysis";
 import Users from "./admin-routes/Users";
 import Wallet from "./admin-routes/Wallet";
 import Settings from "./admin-routes/Settings";
+import ProtectedRoute from "./security/ProtectedRoute";
 
 const App = () => {
   return (
@@ -22,18 +23,21 @@ const App = () => {
       <Route path="/" element={<Home />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/signup" element={<SignUp />}></Route>
-      <Route path="/home" element={<MainHome />}></Route>
-      <Route path="/profile" element={<Profile />}></Route>
-      <Route path="/checkout" element={<Checkout />}></Route>
-      <Route path="/product/:id" element={<ProductPage />}></Route>
-      <Route path="/admin-login" element={<AdminLogin />}></Route>
-      <Route path="/dashboard" element={<Dashboard />}></Route>
-      <Route path="/products" element={<Products />}></Route>
-      <Route path="/orders" element={<Orders />}></Route>
-      <Route path="/analysis" element={<Analysis />}></Route>
-      <Route path="/users" element={<Users />}></Route>
-      <Route path="/wallet" element={<Wallet />}></Route>
-      <Route path="/settings" element={<Settings />}></Route>
+
+      <Route element={<ProtectedRoute />}>
+        <Route path="/home" element={<MainHome />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/checkout" element={<Checkout />}></Route>
+        <Route path="/product/:id" element={<ProductPage />}></Route>
+        <Route path="/admin-login" element={<AdminLogin />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/products" element={<Products />}></Route>
+        <Route path="/orders" element={<Orders />}></Route>
+        <Route path="/analysis" element={<Analysis />}></Route>
+        <Route path="/users" element={<Users />}></Route>
+        <Route path="/wallet" element={<Wallet />}></Route>
+        <Route path="/settings" element={<Settings />}></Route>
+      </Route>
     </Routes>
   );
 };
